@@ -30,7 +30,7 @@ namespace Klank
         {
             get
             {
-                return Convert.ChangeType((object)Tables[index], Tables[index].RTYPE_);
+                return Convert.ChangeType(Tables[index], Tables[index].RTYPE_);
             }
         }
 

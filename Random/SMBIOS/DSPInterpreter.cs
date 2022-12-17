@@ -1,5 +1,4 @@
-﻿using Klank.Generic;
-using Spire.Pdf;
+﻿using Spire.Pdf;
 using Spire.Pdf.Utilities;
 using System.Text.RegularExpressions;
 
@@ -79,8 +78,8 @@ namespace Klank
                                     name = name.Contains('/') ? name.Substring(0, name.IndexOf('/')) : name;
                                     name = name.Contains('(') ? name.Substring(0, name.IndexOf('(')) : name;
 
-                                    enums.Add(new object[2] 
-                                    { 
+                                    enums.Add(new object[2]
+                                    {
                                         byteValue,
                                         Regex.Replace(name, "[^a-zA-Z0-9]", String.Empty)
                                     });
